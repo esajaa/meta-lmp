@@ -15,7 +15,10 @@ inherit pythonnative systemd
 
 SYSTEMD_SERVICE_${PN} = "tee-supplicant.service"
 
-EXTRA_OEMAKE = "DESTDIR=${D}"
+EXTRA_OEMAKE = "DESTDIR=${D} \
+                CFG_TEE_DATA_PATH=/var/tee/vendor/tee \
+                CFG_TEE_FS_PARENT_PATH=/var/tee \
+"
 
 do_install() {
     oe_runmake install
