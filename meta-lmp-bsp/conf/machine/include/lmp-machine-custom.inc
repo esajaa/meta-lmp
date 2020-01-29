@@ -167,6 +167,9 @@ PREFERRED_VERSION_optee-test_imx8mmevk = "3.6.0"
 MACHINE_FEATURES_remove_imx8mmevk = "qca9377 qca6174"
 
 # Allwinner
+KERNEL_IMAGETYPE_sun8i = "fitImage"
+KERNEL_CLASSES_sun8i = " kernel-lmp-fitimage "
+OSTREE_KERNEL_sun8i = "${KERNEL_IMAGETYPE}-${INITRAMFS_IMAGE}-${MACHINE}-${MACHINE}"
 PREFERRED_PROVIDER_virtual/bootloader_sun8i = "u-boot-fio"
 PREFERRED_PROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
 PREFERRED_RPROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
