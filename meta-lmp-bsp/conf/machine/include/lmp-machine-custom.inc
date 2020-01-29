@@ -166,6 +166,11 @@ PREFERRED_VERSION_optee-client_imx8mmevk = "3.6.0+git"
 PREFERRED_VERSION_optee-test_imx8mmevk = "3.6.0"
 MACHINE_FEATURES_remove_imx8mmevk = "qca9377 qca6174"
 
+# Allwinner
+PREFERRED_PROVIDER_virtual/bootloader_sun8i = "u-boot-fio"
+PREFERRED_PROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
+PREFERRED_RPROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
+
 # Cross machines / BSPs
 ## No need to install u-boot, already a WKS dependency
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS_remove_imx = "u-boot-fslc"
