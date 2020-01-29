@@ -176,6 +176,7 @@ PREFERRED_RPROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
 WKS_FILE_sun8i_sota = "sdimage-sunxi-arm-sota.wks"
 IMAGE_CLASSES_remove_sun8i = "sdcard_image-sunxi"
 IMAGE_FSTYPES_remove_sun8i = "ext3 sunxi-sdimg"
+IMAGE_BOOT_FILES_sun8i = "boot.scr uEnv.txt"
 
 # Cross machines / BSPs
 ## No need to install u-boot, already a WKS dependency
