@@ -173,6 +173,9 @@ OSTREE_KERNEL_sun8i = "${KERNEL_IMAGETYPE}-${INITRAMFS_IMAGE}-${MACHINE}-${MACHI
 PREFERRED_PROVIDER_virtual/bootloader_sun8i = "u-boot-fio"
 PREFERRED_PROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
 PREFERRED_RPROVIDER_u-boot-fw-utils_sun8i = "u-boot-fio-fw-utils"
+WKS_FILE_sun8i_sota = "sdimage-sunxi-arm-sota.wks"
+IMAGE_CLASSES_remove_sun8i = "sdcard_image-sunxi"
+IMAGE_FSTYPES_remove_sun8i = "ext3 sunxi-sdimg"
 
 # Cross machines / BSPs
 ## No need to install u-boot, already a WKS dependency
